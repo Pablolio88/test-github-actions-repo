@@ -10,3 +10,6 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
+      - run: git clone https://github.com/Pablolio88/test-github-actions-repo.git
+      - run: cd test-github-actions-repo
+      - run: ls -la
